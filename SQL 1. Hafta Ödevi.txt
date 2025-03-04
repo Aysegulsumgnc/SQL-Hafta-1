@@ -3,7 +3,7 @@ SQL 1. Hafta Ödevi
 
 a)
 
-SELECT FirstName, LastName, Salary 
+SELECT first_name , last_name, salary 
 FROM employees;
 
 # İstediğim kolon bilgilerinin isimlerini tek tek yazarak ve FROM komutuyla da hangi tablodan olduğunu belirterek çağırdım. #
@@ -11,7 +11,7 @@ FROM employees;
 ***********************************************************************************************
 b)
 
-SELECT DISTINCT departmentid
+SELECT DISTINCT department_id
 FROM employees;
 
 # Departman isminin tekrarını DISTINCT komutuyla önleyerek tabloyu getirdim. #
@@ -20,7 +20,7 @@ FROM employees;
 c)
 
 SELECT * FROM employees
-WHERE departmentid = '1';
+WHERE department_id = '1';
 
 # WHERE komutuyla yer bildirip, department tablosunda IT'ye karşılık gelen sayıyı yazarak sadece IT departmanında olan çalışanların bilgilerini getirdim. #
 
@@ -44,7 +44,7 @@ ORDER BY salary DESC;
 ***********************************************************************************************
 e)
 
-SELECT firstname || ' ' || lastname
-FROM employees
+SELECT first_name || ' ' || last_name
+FROM employees;
 
 # Bu kodla iki sütunu birleştirerek tek bir sütun haline getirdim. İsimlerin arasında boşluk kalması için ise  ' ' işaretini koydum. #
